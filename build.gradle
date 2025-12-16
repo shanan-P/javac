@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // using 'testCompile' and JUnit 4 for Gradle 4.4.1 compatibility
+    testCompile 'junit:junit:4.13.2'
+}
+
+// In Gradle 4.x, we define the main class this way
+mainClassName = 'org.example.Main'
